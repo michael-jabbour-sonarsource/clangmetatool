@@ -23,6 +23,7 @@ const clang::MacroInfo *getMacroInfo(clang::SourceLocation location,
                                      const clang::SourceManager &sourceManager,
                                      clang::Preprocessor &preprocessor) {
   // Get macro identifier for the given location
+  // Add comment
 
   llvm::StringRef macroName = preprocessor.getImmediateMacroName(location);
   if (macroName.empty()) {
@@ -85,6 +86,7 @@ expandBeginLocation(clang::SourceLocation begin,
                     const clang::SourceManager &sourceManager,
                     clang::Preprocessor &preprocessor) {
   std::vector<ExpansionFrame> stack;
+  // Add comment
 
   while (begin.isMacroID()) {
     // Get the macro information at this location
