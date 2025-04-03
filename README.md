@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.com/bloomberg/clangmetatool.svg?branch=master)](https://travis-ci.com/bloomberg/clangmetatool)
 
+Updated README!
+
 ## About clangmetatool
 
 When we first started writing clang tools, we realized that there is a
